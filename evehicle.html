@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Vehicle Charging Station Finder</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>E-Vehicle Charging Station Finder</h1>
+  </header>
+  
+  <main>
+    <div id="map"></div>
+
+    <section id="search-section">
+      <h2>Find Charging Stations for Your E-Vehicle</h2>
+      <form id="search-form">
+        <label for="vehicle-type">Select Vehicle Type:</label>
+        <select id="vehicle-type">
+          <option value="car">Car</option>
+          <option value="scooter">Scooter</option>
+          <option value="bike">Bike</option>
+        </select>
+        <label for="location">Enter Location:</label>
+        <input type="text" id="location" placeholder="Enter your location">
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section id="results-section">
+      <h2>Charging Station Results</h2>
+      <ul id="results-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2022 E-Vehicle Charging Station Finder. All rights reserved.</p>
+  </footer>
+</body>
+</html>
